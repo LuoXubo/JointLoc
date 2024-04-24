@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+lightglue/__init__.py
+lightglue/disk.py
+lightglue/lightglue.py
+lightglue/superpoint.py
+lightglue/utils.py
+lightglue/viz2d.py
+lightglue.egg-info/PKG-INFO
+lightglue.egg-info/SOURCES.txt
+lightglue.egg-info/dependency_links.txt
+lightglue.egg-info/requires.txt
+lightglue.egg-info/top_level.txt

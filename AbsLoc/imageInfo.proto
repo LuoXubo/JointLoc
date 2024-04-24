@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package imagebag;
+
+message imageInfo {
+    string timestamp = 1;
+    bytes image_data = 2;
+}

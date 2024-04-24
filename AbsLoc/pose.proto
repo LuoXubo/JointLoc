@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package posebag;
+
+message poseInfo {
+    string timestamp = 1;
+    float x = 2;
+    float y = 3;
+    float z = 4;
+    float qw = 5;
+    float qx = 6;
+    float qy = 7;
+    float qz = 8;
+    float conf = 9;
+    bytes image_data = 10;
+}

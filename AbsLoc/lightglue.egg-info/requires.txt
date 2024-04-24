@@ -1,0 +1,6 @@
+
+[extra]
+torch
+kornia
+numpy
+einops
