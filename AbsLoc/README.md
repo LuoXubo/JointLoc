@@ -4,6 +4,10 @@
 
 This is the absolute localization module of JointLoc. The module takes the UAV images and the satellite map as input, and outputs the absolute location of the UAV.
 
+## Notice
+
+The main file is delted due to the privacy of the project. We will provide the main file after the paper is accepted.
+
 ## Installation
 
 ```bash
