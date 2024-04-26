@@ -1,0 +1,10 @@
+sensor_msgs/Image img
+time timestamp
+float64 x
+float64 y
+float64 z
+float64 qw
+float64 qx
+float64 qy
+float64 qz
+float64 conf 

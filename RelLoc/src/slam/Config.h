@@ -1,0 +1,10 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+#define SHOW_WITH_PANGOLIN
+
+// #define RUN_WITH_COMPRESSEDIMAGEMSG
+
+#define TEST_KITTI_DATA
+
+#endif // CONFIG_H

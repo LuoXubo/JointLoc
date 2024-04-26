@@ -4,6 +4,12 @@ Code for "JointLoc: A Real-time Visual Localization Framework for Planetary UAVs
 
 ![JointLoc](/figs/pipeline.png)
 
+## Update
+
+### 2024.04.26
+
+Most codes of the AbsLoc and RelLoc modules are uploaded. Meanwhile, the main files are deleted due to the privacy of the project. We will provide the main files and the test datset after the paper is accepted.
+
 ## Getting Started
 
 ### Installation

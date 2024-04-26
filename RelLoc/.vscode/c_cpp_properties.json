@@ -1,0 +1,45 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/yuanbin/catkin_ws/devel/include/**",
+        "/home/yuanbin/mavros_ws/devel/include/**",
+        "/home/yuanbin/IntelligentUAVChampionshipSimulator/roswrapper/ros/devel/include/**",
+        "/home/yuanbin/road_mapping_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/yuanbin/IntelligentUAVChampionshipSimulator/roswrapper/ros/src/airsim_ros_pkgs/include/**",
+        "/home/yuanbin/catkin_ws/src/A-LOAM/include/**",
+        "/home/yuanbin/road_mapping_ws/src/AVP-SLAM-PLUS/avp_slam_plus/include/**",
+        "/home/yuanbin/catkin_ws/src/CHMC-SLAM-Cuda/cslam/include/**",
+        "/home/yuanbin/mavros_ws/src/eigen_checks/include/**",
+        "/home/yuanbin/mavros_ws/src/mavros/libmavconn/include/**",
+        "/home/yuanbin/mavros_ws/src/mav_comm/mav_msgs/include/**",
+        "/home/yuanbin/mavros_ws/src/mav_comm/mav_planning_msgs/include/**",
+        "/home/yuanbin/mavros_ws/src/mav_trajectory_generation/mav_trajectory_generation/include/**",
+        "/home/yuanbin/mavros_ws/src/mav_trajectory_generation/mav_trajectory_generation_example/include/**",
+        "/home/yuanbin/mavros_ws/src/mav_trajectory_generation/mav_trajectory_generation_ros/include/**",
+        "/home/yuanbin/mavros_ws/src/mav_trajectory_generation/mav_visualization/include/**",
+        "/home/yuanbin/mavros_ws/src/mavros/mavros/include/**",
+        "/home/yuanbin/mavros_ws/src/mavros/mavros_msgs/include/**",
+        "/home/yuanbin/mavros_ws/src/nlopt/include/**",
+        "/home/yuanbin/road_mapping_ws/src/robot_localization_demo/include/**",
+        "/home/yuanbin/mavros_ws/src/rotors_simulator/rotors_control/include/**",
+        "/home/yuanbin/mavros_ws/src/rotors_simulator/rotors_gazebo_plugins/include/**",
+        "/home/yuanbin/mavros_ws/src/rotors_simulator/rotors_hil_interface/include/**",
+        "/home/yuanbin/mavros_ws/src/rotors_simulator/rotors_joy_interface/include/**",
+        "/home/yuanbin/mavros_ws/src/mavros/test_mavros/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

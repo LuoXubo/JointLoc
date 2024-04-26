@@ -6,7 +6,7 @@ This is the absolute localization module of JointLoc. The module takes the UAV i
 
 ## Notice
 
-The main file is delted due to the privacy of the project. We will provide the main file after the paper is accepted.
+The main file is deleted due to the privacy of the project. We will provide the main file after the paper is accepted.
 
 ## Installation
 
