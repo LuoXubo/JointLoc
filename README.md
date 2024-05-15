@@ -59,7 +59,7 @@ sh demo.sh
 This script will open 3 temrminals:
 
 1. The first terminal will open redis-server.
-2. The second terminal runs the relative localization (SLAM) system in /SLAM/ directory.
+2. The second terminal runs the relative localization (SLAM) system in /RelLoc/ directory.
 3. The third terminal runs the absolute localization system in /AbsLoc/ directory.
 
 ## Evaluation
@@ -97,10 +97,12 @@ This work incorporates many open-source codes. We extend our gratitude to the au
 If you find this repo useful for your research, please consider citing the paper
 
 ```
-@inproceedings{xubo,
-  title={JointLoc: A Real-time Visual Localization Framework for Planetary UAVs Based on Joint Relative and Absolute Pose Estimation},
-  author={Xubo, Luo and Xue, Wan and Yixing, Gao and Yaolin, Tian and Wei, Zhang and Leizheng, Shu},
-  booktitle={none},
-  year={2024},
+@misc{luo2024jointloc,
+      title={JointLoc: A Real-time Visual Localization Framework for Planetary UAVs Based on Joint Relative and Absolute Pose Estimation},
+      author={Xubo Luo and Xue Wan and Yixing Gao and Yaolin Tian and Wei Zhang and Leizheng Shu},
+      year={2024},
+      eprint={2405.07429},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
 }
 ```
