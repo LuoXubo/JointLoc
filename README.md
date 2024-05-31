@@ -1,6 +1,6 @@
 # JointLoc
 
-Code for "JointLoc: A Real-time Visual Localization Framework for Planetary UAVs Based on Joint Relative and Absolute Pose Estimation" (IROS 2024).
+Code for "JointLoc: A Real-time Visual Localization Framework for Planetary UAVs Based on Joint Relative and Absolute Pose Estimation" (IROS 2024 Under review).
 
 ![JointLoc](/figs/pipeline.png)
 
