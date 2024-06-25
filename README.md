@@ -106,3 +106,7 @@ If you find this repo useful for your research, please consider citing the paper
       primaryClass={cs.RO}
 }
 ```
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=LuoXubo/JointLoc&type=Date)](https://star-history.com/#LuoXubo/JointLoc&Date)
