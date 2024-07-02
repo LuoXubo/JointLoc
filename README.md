@@ -81,7 +81,7 @@ sh run_orb_slam3.sh
 
 ### Visualization
 
-![ORB-SLAM2](figs/gif.gif)
+<img src="figs/comp.gif" alt="Comparison">
 
 ## Acknowledgement
 
