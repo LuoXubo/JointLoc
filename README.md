@@ -1,10 +1,16 @@
 # JointLoc
 
-Code for "JointLoc: A Real-time Visual Localization Framework for Planetary UAVs Based on Joint Relative and Absolute Pose Estimation" (IROS 2024 Under review).
+Code for "JointLoc: A Real-time Visual Localization Framework for Planetary UAVs Based on Joint Relative and Absolute Pose Estimation" (IROS 2024).
 
 ![JointLoc](/figs/pipeline.png)
 
 ## Update
+
+### 2024.06.30
+
+The paper has been accepted by IROS 2024. The the test dataset is uploaded. You can download the test dataset from [Google Drive](https://drive.google.com/drive/folders/1yAkHwNPdhbssDJqgm2Jvgculvo8pLQz6?usp=sharing) and extract it to the `JointLoc` directory.
+
+We are preparing the main files (`vslam` in RelLoc and `vloc` in AbsLoc) and will upload them soon.
 
 ### 2024.04.26
 
@@ -22,32 +28,38 @@ cd JointLoc
 Setup the environment:
 
 ```bash
-conda env create -f environment.yml
+conda create -n JointLoc python=3.7 --yes
 conda activate JointLoc
+cd AbsLoc
+pip install -r requirements.txt
 ```
 
-Besides the python packages, you also need to configure the OpenCV, Eigen, Ceres Solver, Redis and Protobuf. You can refer to the ORB-SLAM3 to install them.
+Besides the python packages, you also need to configure the OpenCV, Eigen, Ceres Solver, Redis and Protobuf. You can refer to the [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) to install them.
 
 ## Quick Demo
 
 ### Download the dataset
 
-Download the test dataset from [Google Drive](https://drive.google.com/file/d/1Q6Q6Q1Z9) and extract it to the `JointLoc` directory. The given dataset and your own dataset should have the following structure:
+Download the test dataset from [Google Drive](https://drive.google.com/drive/folders/1yAkHwNPdhbssDJqgm2Jvgculvo8pLQz6?usp=sharing) and extract it to the `JointLoc` directory. The given dataset and your own dataset should have the following structure:
 
 ```
 JointLoc
 ├── dataset
-│   ├── uav
-│   │   ├── 000000.png
-│   │   ├── 000001.png
-│   │   └── ...
-│   ├── satellite
-│   │   ├── 000000.png
-│   │   ├── 000001.png
-│   │   └── ...
-│   ├── groundtruth.txt
-│   └── ...
-└── ...
+│   ├── [Terrain]_dataset
+│   │   ├── uav
+│   │   │   ├── images
+│   │   │   │   ├── 000000.png
+│   │   │   │   ├── 000001.png
+│   │   │   │   ├── ...
+│   │   │   ├── images.txt
+│   │   │   ├── gt.txt
+│   │   │   ├── ...
+│   │   ├── satelite
+│   │   │   ├── 0_x0_y0.png
+│   │   │   ├── 0_x0_y1.png
+│   │   │   ├── ...
+│   │   ├── satelite.png
+│   ├── ...
 ```
 
 ### Run the demo
