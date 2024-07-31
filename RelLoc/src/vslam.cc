@@ -37,8 +37,8 @@
 #include "slam/ViewPoint.h"
 
 #include <sw/redis++/redis++.h>
-#include "/home/xubo/Codes/slam/jointslam/build/poseInfo.pb.h"
-#include "/home/xubo/Codes/slam/jointslam/build/imageInfo.pb.h"
+#include "../build/poseInfo.pb.h"
+#include "../build/imageInfo.pb.h"
 
 NormalPrameter nprameter;
 
