@@ -6,11 +6,15 @@
 
 ## Update
 
+## 2024.07.31
+
+All the codes are uploaded. We are now preparing the installation and usage instructions.
+
 ### 2024.06.30
 
 The paper has been accepted by IROS 2024. The the test dataset is uploaded. You can download the test dataset from [Google Drive](https://drive.google.com/drive/folders/1yAkHwNPdhbssDJqgm2Jvgculvo8pLQz6?usp=sharing) and extract it to the `JointLoc` directory.
 
-We are preparing the main files (`vslam` in RelLoc and `vloc` in AbsLoc) and will upload them soon.
+We are preparing the main files (`vslam.cc` in RelLoc and `estimate.py` in AbsLoc) and will upload them soon.
 
 ### 2024.04.26
 
