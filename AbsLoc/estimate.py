@@ -146,8 +146,7 @@ if __name__ == "__main__":
         if pre_timestamp != timestamp:
             print("Warning!\n\n\n The timestamps are not aligned!\n\n")
         z, qw, qx, qy, qz = gtline.split(' ')[3:]
-        x_gt, y_gt = gtline.split(' ')[1:3]
-
+        
         startX, startY = best_sub.split('.')[0].split('_')[1], best_sub.split('.')[0].split('_')[2]
         pt_sate = transformation(pt_drone.T, best_H)
         x, y = coords(pt_sate)
@@ -179,8 +178,8 @@ if __name__ == "__main__":
         """
         [resX, resY, z] = align([resX, resY, float(z)])
         pose.timestamp = timestamp
-        pose.x = float(x_gt)
-        pose.y = float(y_gt)
+        pose.x = float(resX)
+        pose.y = float(resY)
         pose.z = z
         pose.qw = float(qw)
         pose.qx = float(qx)
