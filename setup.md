@@ -20,6 +20,15 @@ The `Redis` and `Protobuf` are used to connect the absolute localization and rel
 ### 2.1 Redis
 
 ```bash
+wget https://download.redis.io/releases/redis-6.2.6.tar.gz
+tar xzf redis-6.2.6.tar.gz
+sudo mv redis-6.2.6 /usr/local/redis
+cd /usr/local/redis
+make
+make install PREFIX=/usr/local/redis
+```
+
+```bash
 wget https://github.com/redis/hiredis/archive/refs/tags/v1.1.0.zip
 unzip hiredis-1.1.0.zip
 cd hiredis-1.1.0
@@ -28,9 +37,9 @@ cmake ..
 make -j8
 sudo make install
 
-wget https://github.com/sewenew/redis-plus-plus/archive/refs/tags/1.3.8.zip
-unzip redis-plus-plus-1.3.8.zip
-cd redis-plus-plus-1.3.8
+wget https://github.com/sewenew/redis-plus-plus/archive/refs/tags/1.3.7.zip
+unzip redis-plus-plus-1.3.7.zip
+cd redis-plus-plus-1.3.7
 mkdir build && cd build
 cmake ..
 make -j8
@@ -40,14 +49,17 @@ sudo make install
 ### 2.2 Protobuf
 
 ```bash
-wget https://github.com/protocolbuffers/protobuf/archive/refs/tags/v3.25.2.zip
-unzip protobuf-3.25.2.zip
-cd protobuf-3.25.2
-mkdir build && cd build
-cmake -Dprotobuf_BUILD_TESTS=OFF -Dprotobuf_BUILD_EXAMPLES=OFF ..
+wget https://github.com/protocolbuffers/protobuf/archive/refs/tags/v3.20.0.zip
+unzip protobuf-3.20.0.zip
+cd protobuf-3.20.0
+./autogen.sh
+./configure
 make -j8
 sudo make install
+sudo ldconfig
 ```
+
+**Notice: You may need to download the `googletest` to replace the `googletest` in the `protobuf/third_party/` folder.**
 
 ## 3. Compile the project
 
@@ -64,5 +76,8 @@ Once you have installed all the dependencies, you can run the quick demo to test
 
 ```bash
 cd JointLoc
-sh demo.sh
+sh RelLoc/redis.sh      # run redis server
+sh AbsLoc/server.sh     # publish images to redis
+sh RelLoc/relloc.sh     # run relative localization
+sh AbsLoc/absloc.sh     # run absolute localization
 ```

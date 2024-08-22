@@ -1,2 +1,3 @@
 #!/bin/bash
-redis-cli
+sudo service redis-server stop
+redis-server

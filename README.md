@@ -6,7 +6,11 @@
 
 ## Update
 
-## 2024.07.31
+### 2024.08.22
+
+The installation and usage instructions are uploaded. You can refer to the `setup.md` to install and run the JointLoc.
+
+### 2024.07.31
 
 All the codes are uploaded. We are now preparing the installation and usage instructions.
 
@@ -62,14 +66,19 @@ JointLoc
 ### Run the demo
 
 ```bash
-sh demo.sh
+cd JointLoc
+sh RelLoc/redis.sh      # run redis server
+sh AbsLoc/server.sh     # publish images to redis
+sh RelLoc/relloc.sh     # run relative localization
+sh AbsLoc/absloc.sh     # run absolute localization
 ```
 
-This script will open 3 temrminals:
+This script will open 4 temrminals:
 
 1. The first terminal will open redis-server.
-2. The second terminal runs the relative localization (SLAM) system in /RelLoc/ directory.
-3. The third terminal runs the absolute localization system in /AbsLoc/ directory.
+2. The second terminal will publish the images to the redis-server.
+3. The third terminal runs the relative localization (SLAM) system in /RelLoc/ directory.
+4. The fourth terminal runs the absolute localization system in /AbsLoc/ directory.
 
 ## Evaluation
 
