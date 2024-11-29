@@ -29,7 +29,7 @@ central_coords_x = 500
 central_coords_y = 500
 pt_drone = np.matrix([int(central_coords_x/2), int(central_coords_y/2), 1])
 
-root_dataset = '../Datasets/Mars/'
+root_dataset = '/mnt/Datasets/JointLoc'
 
 
 best_match, best_score, best_sub = 100, 1, 'test'

@@ -112,10 +112,12 @@ namespace ORB_SLAM2
       // 启用地形约束时，若初始化成功，则准备估计归一化参数：Init_P0, Init_Scale, Init_Rotation
       if (initial_state == true && m_curFrame.GetAbsXY().flag == true)
       {
-        nprameter.NP_Ready = true;
-        nprameter.Init_Traslation << 6.82644232e+02, 2.37805226e+03, 1.08338758e+00;
-        nprameter.Init_Rotation << 9.99992468e-01, -1.99489533e-04, -3.87621791e-03, 1.91420347e-04, 9.99997814e-01, -2.08197567e-03, 3.87662478e-03, 2.08121800e-03, 9.99990320e-01;
-        nprameter.Init_Scale = 19.58520480613789;
+        std::cout << "Use prior information!!!\n\n\n"
+                  << std::endl;
+        // nprameter.NP_Ready = true;
+        // nprameter.Init_Traslation << 6.82644232e+02, 2.37805226e+03, 1.08338758e+00;
+        // nprameter.Init_Rotation << 9.99992468e-01, -1.99489533e-04, -3.87621791e-03, 1.91420347e-04, 9.99997814e-01, -2.08197567e-03, 3.87662478e-03, 2.08121800e-03, 9.99990320e-01;
+        // nprameter.Init_Scale = 19.58520480613789;
 
         nprameter.use = true;
       }

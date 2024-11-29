@@ -12,7 +12,7 @@ import time
 import pose_pb2, imageInfo_pb2
 
 ### init
-root_dataset = '/home/xubo/Dataset/Mars/Orbit/'
+root_dataset = '/mnt/Datasets/JointLoc/Gravel/'
 gt_XY = root_dataset + 'uav/gt.txt'
 uav_path = root_dataset + 'uav/images/'
 uav_file_list = os.listdir(uav_path)

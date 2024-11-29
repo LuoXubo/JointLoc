@@ -17,9 +17,12 @@ struct NormalPrameter
   int wait;
   bool use;
 
-  double Init_Scale;
-  Eigen::Vector3d Init_Traslation;
-  Eigen::Matrix3d Init_Rotation;
+  // double Init_Scale;
+  // Eigen::Vector3d Init_Traslation;
+  // Eigen::Matrix3d Init_Rotation;
+
+  Eigen::Vector3d l2g_translation;
+  Eigen::Matrix3d l2g_rotation;
 
   std::vector<Eigen::Vector3d> abs;
   std::vector<Eigen::Vector3d> ref;

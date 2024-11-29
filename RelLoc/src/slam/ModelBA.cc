@@ -690,7 +690,7 @@ bool buildLBAProblem(const std::list<MapPoint *> &lLocalMapPoints,
       continue;
 
     const map<KeyFrame *, size_t> observations = pMP->GetObservations();
-
+    // std::cout << "Start to build LBA problem" << std::endl;
     for (auto mit = observations.begin(); mit != observations.end(); mit++)
     {
       KeyFrame *pKF = mit->first;
@@ -823,7 +823,8 @@ bool buildXYProblem(std::list<KeyFrame *> &lLocalKeyFrames,
   auto R = rt.block(0, 0, 3, 3);
   t << rt(0, 3), rt(1, 3), rt(2, 3);
 
-  // std::cout << "Checkpoint 2\n\n";
+  nprameter.l2g_rotation = R;
+  nprameter.l2g_translation = t;
 
   // for (int idx = 0; idx < vecKeyFrames.size(); idx++)
   for (auto lit = lLocalKeyFrames.begin(); lit != lLocalKeyFrames.end(); lit++)

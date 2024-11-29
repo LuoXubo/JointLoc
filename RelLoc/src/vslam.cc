@@ -47,8 +47,6 @@ using namespace sw::redis;
 
 void RedisGetMessages(std::vector<std::string> channels);
 void call_back(std::string channel, std::string msg);
-
-void RedisG2L();
 void g2l_call_back(std::string channel, std::string msg);
 
 std::vector<double> vTimestamps;
